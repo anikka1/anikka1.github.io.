@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Anikka Bechler</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Product designer, formerly doing UI design at Ontario Teachers' Pension Plan and UX design at WUSA">
+  <meta name="author" content="Anikka Bechler">
+  <meta name="theme-color" content="#000000">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/hoverStates.js"></script>
+
+<link rel="icon" type="image/png" href="favicon2.ico" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon1.ico" sizes="16x16" />
+
+</head>
+<body>
+    
+ <!-- On load fade in page -->
+<script>
+$(document).ready(function() {
+    $("body").css("display", "none");
+    $("body").fadeIn(200);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(100, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+      }
+});
+</script>
+
+<!-- Navigation Menu -->
+<div class="container">
+  <section class="header">
+    <div class="row" id="menu">
+      <div class="onecolumn" style="margin-top: 5%; margin-bottom:20%;">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="transition, navbar-link" id="active" href="http://www.anikkabechler.com/">work</a></li>
+          <li class="navbar-item"><a class="transition, navbar-link" href="http://www.anikkabechler.com/contact.html">contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!-- Site heading -->
+  <div class="row">
+    <div class="onecolumn" style="margin-bottom:10%;">
+      <p id="font-bold">anikka bechler, product experience designer <br><br> formerly at <a href="https://otpp.com/" class="heading-link" target="_blank">ontario teachers' pension plan</a>,
+        and <a href="https://wusa.ca" class="heading-link" target="_blank">wusa</a></p>
+    </div>
+  </div>
+</section>
+
+
+<div class="row portfolio-content">
+  <div class="six columns">
+      <div class="portfolio-container" style="margin-left: 5px; margin-top: 25px;">
+        <a class="image-wrapper work" href="projects/user-experience.html"> <img class="thumbnail" src="images/transit.png"> </a>
+        <a href="projects/user-experience.html" class="work"><h2 class="thumbnail-title"><span id="title">user experience</span></h2></a>
+        <a href="projects/user-experience.html" class="work"><h3>2019 · Case Study</h3></a>
+      </div>
+    </div>
+    <div class="six columns">
+        <div class="portfolio-container" style="margin-left: 5px; margin-top: 25px;">
+          <a class="image-wrapper work" href="projects/interaction-design.html"> <img class="thumbnail" src="images/bot.png"> </a>
+          <a href="projects/interaction-design.html" class="work"><h2 class="thumbnail-title"><span id="title">interaction design</span></h2></a>
+          <a href="projects/interaction.html" class="work"><h3>2019 · Furntiture</h3></a>
+        </div>
+      </div>
+    </div>
+    
+<div class="row portfolio-content">
+     <div class="six columns">
+        <div class="portfolio-container" style="margin-left: 5px; margin-top: -100px;">
+          <a class="image-wrapper work" href="projects/visual-design.html"> <img class="thumbnail" src="images/bot.png"> </a>
+          <a href="projects/visual-design.html" class="work"><h2 class="thumbnail-title"><span id="title">visual design</span></h2></a>
+          <a href="projects/twitter-bot.html" class="work"><h3>2019 · Brand Identity</h3></a>
+        </div>
+      </div>
+     <div class="six columns">
+        <div class="portfolio-container" style="margin-left: 5px; margin-top: -100px;">
+          <a class="image-wrapper work" href="projects/user-interface.html"> <img class="thumbnail" src="images/bot.png"> </a>
+          <a href="projects/user-interface.html" class="work"><h2 class="thumbnail-title"><span id="title">user interface</span></h2></a>
+          <a href="projects/twitter-bot.html" class="work"><h3>2019 · Wireframes</h3></a>
+        </div>
+      </div>
+</div>
+</div>
+</body>
+</html>
